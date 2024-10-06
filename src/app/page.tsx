@@ -7,8 +7,10 @@ import { MouseEvent, useState } from "react";
 import { Typed } from "react-typed";
 
 export default function Home() {
-    if ("scrollRestoration" in history) {
-        history.scrollRestoration = "manual";
+    if (history) {
+        if ("scrollRestoration" in history) {
+            history.scrollRestoration = "manual";
+        }
     }
 
     const [typed1, setTyped1] = useState<Typed | undefined>();
