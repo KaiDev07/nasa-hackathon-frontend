@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { MouseEvent } from "react";
-import { Typed } from "react-typed";
 
 export default function Questionnaire() {
     return (
