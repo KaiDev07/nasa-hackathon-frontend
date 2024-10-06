@@ -1,6 +1,7 @@
 "use client";
 
 import Slide from "@/components/Slide";
+import Questionnaire from "@/components/Questionnaire";
 import Image from "next/image";
 import { MouseEvent, useState } from "react";
 import { Typed } from "react-typed";
@@ -127,6 +128,7 @@ to one of the most unique ecosystems on Earth, is facing great changes."
                     typedArray={[typed10]}
                     setTyped={setTyped11}
                 />
+                <Questionnaire />
             </div>
         </>
     );

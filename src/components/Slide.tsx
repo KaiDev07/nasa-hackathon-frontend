@@ -56,6 +56,16 @@ export default function Slide({
         e.currentTarget.parentElement?.parentElement?.nextElementSibling?.classList.add(
             "page-in"
         );
+        if (
+            e.currentTarget.parentElement?.parentElement?.nextElementSibling?.classList.contains(
+                "quest-container"
+            )
+        ) {
+            const body = document.querySelector("body");
+            if (body) {
+                body.classList.add("overflow");
+            }
+        }
 
         await sleep(500);
         if (typedArray.length > 1 && typedArray[1] !== undefined) {
