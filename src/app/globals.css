@@ -227,3 +227,8 @@ body {
 .show-answer {
     opacity: 1 !important;
 }
+
+.body-ggf {
+    top: 0;
+    left: 0;
+}
